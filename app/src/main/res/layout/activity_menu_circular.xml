@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondolu"
+    tools:context=".MenuCircular">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/tolita2" />
+
+    <com.hitomi.cmlibrary.CircleMenu
+        android:id="@+id/circlemenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/btnSignout"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_below="@+id/circlemenu"
+        android:background="@drawable/fondoboton"
+        android:text="CERRAR SESION"
+        android:layout_margin="20dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>

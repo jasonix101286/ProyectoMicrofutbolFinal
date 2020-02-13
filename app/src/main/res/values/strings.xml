@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FireBaseVocalía</string>
+
+    <string-array name="Campeonato">
+        <item>Campeonato</item>
+        <item>Máxima</item>
+        <item>Primera</item>
+        <item>Segunda</item>
+    </string-array>
+
+    <string-array name="Horario">
+        <item>Horario</item>
+        <item>Sábado 8:00 - 10:00</item>
+        <item>Sábado 10:00 - 12:00</item>
+        <item>Sábado 12:00 - 14:00</item>
+        <item>Sábado 14:00 - 16:00</item>
+        <item>Sábado 16:00 - 18:00</item>
+    </string-array>
+
+</resources>
+
+
+

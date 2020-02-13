@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoli"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="101dp"
+        android:text="Equipo"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nombreEquipo"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="23dp"
+        android:text="Nombre Equipo:"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/etNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/etFecha"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+    <TextView
+        android:id="@+id/fechaFundacion"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="23dp"
+        android:text="Fecha Fundación:"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/etFecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreEquipo" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ListView
+        android:id="@+id/lv_Equipos"
+        android:layout_width="411dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/fondoet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/fondoet"
+        android:text="Lista Equipos"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFecha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

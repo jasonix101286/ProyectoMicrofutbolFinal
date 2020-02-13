@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoli"
+    tools:context=".VvaloresVocalia">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="80dp"
+        android:text="Valores Vocalía"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/design_default_color_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtxValorArbitraje"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:hint="Valor Arbitraje"
+        android:inputType="numberDecimal"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spEquipos" />
+
+    <EditText
+        android:id="@+id/edtxValorAporte"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:hint="Valor Aporte"
+        android:inputType="numberDecimal"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxValorArbitraje" />
+
+    <EditText
+        android:id="@+id/edtxValorSeguro"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:hint="Valor Seguro"
+        android:inputType="numberDecimal"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxValorAporte" />
+
+    <EditText
+        android:id="@+id/edtxValorTA"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:hint="Valor Tarjeta Amarilla"
+        android:inputType="numberDecimal"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxValorSeguro" />
+
+    <EditText
+        android:id="@+id/edtxValorTR"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:hint="Tarjeta Roja"
+        android:inputType="numberDecimal"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxValorTA" />
+
+    <EditText
+        android:id="@+id/edtxOtrosValores"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:hint="Otros Valores"
+        android:inputType="numberDecimal"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxValorTR" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/fondoboton"
+        android:onClick="Suma"
+        android:text="Calcular"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxOtrosValores" />
+
+    <Spinner
+        android:id="@+id/spEquipos"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/fondoet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <ListView
+        android:id="@+id/lvValoresVocalia"
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/fondoet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

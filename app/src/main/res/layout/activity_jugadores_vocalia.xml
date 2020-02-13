@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoli"
+    tools:context=".VJugadoresVocalia">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="64dp"
+        android:text="Jugadores Vocalía"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/design_default_color_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtxIdJugador"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:hint="id Jugador"
+        android:inputType="textPersonName"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spEquipos1" />
+
+    <EditText
+        android:id="@+id/edtxTarjetaAmarilla"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:hint="Tarejtas Amarilla"
+        android:inputType="textPersonName"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxGoles" />
+
+    <EditText
+        android:id="@+id/edtxGoles"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:hint="Goles"
+        android:inputType="textPersonName"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxIdEquipo" />
+
+    <EditText
+        android:id="@+id/edtxIdEquipo"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:hint="Id Equipo"
+        android:inputType="textPersonName"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxIdJugador" />
+
+    <EditText
+        android:id="@+id/edtxTarjetaRoja"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:hint="Tarjetas Roja"
+        android:inputType="textPersonName"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxTarjetaAmarilla" />
+
+    <EditText
+        android:id="@+id/edtxIdVocalia"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:hint="Id Vocalia"
+        android:inputType="textPersonName"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxTarjetaRoja" />
+
+    <ListView
+        android:id="@+id/lv_JV"
+        android:layout_width="396dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/fondoet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxIdVocalia" />
+
+    <Spinner
+        android:id="@+id/spEquipos1"
+        android:layout_width="370dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/fondoet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

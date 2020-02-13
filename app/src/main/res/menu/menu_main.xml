@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:andriod="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item andriod:id="@+id/icon_add"
+        andriod:icon="@drawable/ic_add"
+        andriod:title="Edit Done"
+        app:showAsAction="always"
+        />
+
+    <item andriod:id="@+id/icon_save"
+    andriod:icon="@drawable/ic_save"
+    andriod:title="Edit Done"
+    app:showAsAction="always"
+    />
+
+    <item andriod:id="@+id/icon_delete"
+        andriod:icon="@drawable/ic_delete"
+        andriod:title="Edit Done"
+        app:showAsAction="always"
+        />
+
+</menu>
